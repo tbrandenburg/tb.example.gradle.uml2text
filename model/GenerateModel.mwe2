@@ -1,0 +1,32 @@
+module GenerateModel
+
+var rootPath = ".."
+
+Workflow {
+    bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+        projectMapping = {
+            path = "${rootPath}/tb.example.gradle.uml2text"
+            projectName = "tb.example.gradle.uml2text"
+        }
+    }
+
+    component = org.eclipse.emf.mwe.utils.DirectoryCleaner {
+        directory ="src-gen/"
+    }
+    
+	bean = org.eclipse.xtend.typesystem.uml2.Setup {
+	}
+
+    component =  org.eclipse.emf.mwe.utils.Reader {
+		id = "reader"
+		uri = "uml/model.uml"
+		modelSlot = "model"
+	}
+
+    component =  org.eclipse.emf.mwe.utils.Writer {
+		id = "writer"
+		uri = "build/resources/model_out.uml"
+		modelSlot = "model"
+	}
+
+}
