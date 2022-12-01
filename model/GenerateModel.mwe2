@@ -19,7 +19,7 @@ Workflow {
 
     component =  org.eclipse.emf.mwe.utils.Reader {
 		id = "reader"
-		uri = "uml/model.uml"
+		uri = "model/model.uml"
 		modelSlot = "model"
 	}
 
