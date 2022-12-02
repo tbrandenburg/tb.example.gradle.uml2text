@@ -56,6 +56,7 @@ dependencies {
   mwe2 "org.eclipse.emf:org.eclipse.emf.mwe2.launch:${mwe2Version}"
   mwe2 "org.eclipse.xtext:org.eclipse.xtext.xtext.generator:${xtextVersion}"
   mwe2 "org.eclipse.xtext:org.eclipse.xtext.common.types:${xtextVersion}"
+  mwe2 "org.eclipse.xtext:xtext-antlr-generator:[2.1.1, 3)"
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.xtend.typesystem.uml2_*.jar'])
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.xtend.typesystem.emf_*.jar'])
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.xtend_*.jar'])
@@ -69,7 +70,6 @@ dependencies {
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.jface_*.jar'])
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.jface.text_*.jar'])
   mwe2 fileTree(dir: "${eclipsePluginsDir}", include: ['org.eclipse.text_*.jar'])
-  mwe2 "org.eclipse.xtext:xtext-antlr-generator:[2.1.1, 3)"
 }
 
 task generateXtextLanguage(type: JavaExec) {
