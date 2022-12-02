@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8n4GYHG4Ee2bz9IZchuE6Q">
-  <packagedElement xmi:type="uml:Class" xmi:id="_-L8hMHG4Ee2bz9IZchuE6Q" name="MyClass"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8n4GYHG4Ee2bz9IZchuE6Q" name="MyModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_-L8hMHG4Ee2bz9IZchuE6Q" name="MyClass1">
+    <ownedOperation xmi:id="_HpJa0HIOEe2opK6LGp_vuw" name="myOp1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tWtMUHIOEe2opK6LGp_vuw" name="MyClass2">
+    <ownedOperation xmi:id="_tWtMUXIOEe2opK6LGp_vuw" name="myOp2"/>
+  </packagedElement>
 </uml:Model>

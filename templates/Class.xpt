@@ -1,0 +1,6 @@
+«DEFINE E FOR uml::Class»
+«FILE name + ".cpp"»/* --- «name» --- */
+
+«EXPAND Operation::E FOREACH allOwnedElements().typeSelect(uml::Operation)»
+«ENDFILE»
+«ENDDEFINE»

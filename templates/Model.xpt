@@ -1,0 +1,7 @@
+«EXTENSION org::eclipse::xtend::util::stdlib::io»
+
+«DEFINE E FOR uml::Model»
+«FILE name + ".txt"»This is the root folder of the generated UML model "«name»"«ENDFILE»
+«EXPAND Package::E FOREACH allOwnedElements().typeSelect(uml::Package)»
+«EXPAND Class::E FOREACH allOwnedElements().typeSelect(uml::Class)»
+«ENDDEFINE»

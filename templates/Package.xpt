@@ -1,0 +1,3 @@
+«DEFINE E FOR uml::Package»
+«EXPAND Class::E FOREACH allOwnedElements().typeSelect(uml::Class)»
+«ENDDEFINE»

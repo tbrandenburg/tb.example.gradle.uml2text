@@ -29,4 +29,25 @@ Workflow {
 		modelSlot = "model"
 	}
 
+    component = org.eclipse.xpand2.Generator {
+        id = "generator"
+		expand = "templates::Model::E FOR model"
+		fileEncoding = "UTF-8"
+			
+		metaModel = org.eclipse.xtend.typesystem.emf.EmfRegistryMetaModel {}
+		metaModel = org.eclipse.xtend.typesystem.emf.EmfMetaModel {
+			metaModelPackage = "org.eclipse.emf.ecore.EcorePackage"
+		}
+		metaModel = org.eclipse.xtend.typesystem.uml2.UML2MetaModel {}
+				
+		outlet = {
+			fileEncoding = "UTF-8"
+			path = "src-gen"
+			postprocessor = org.eclipse.xpand2.output.JavaBeautifier {}
+		}
+		resourceManager = org.eclipse.xtend.expression.ResourceManagerDefaultImpl {
+			fileEncoding = "UTF-8"
+		}
+	}
+
 }

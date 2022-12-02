@@ -45,6 +45,7 @@ hs_err_pid*
 
 # User stuff
 .settings/
+.vscode/
 bin/
 deploy/
 META-INF/
